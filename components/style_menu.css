@@ -1,0 +1,127 @@
+@import url("style.css");
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+body {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background: #29343b;
+  font-family: "Montserrat", sans-serif;
+}
+.naslov {
+  background-color:#194969;
+  border: #3498db 5px solid;
+  border-radius: 8px;
+  font-size: 32px;
+  padding: 1rem;
+}
+.mainContainer {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  width: fit-content;
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navMenu a, form input[type=submit] {
+  padding: 0.5rem;
+  width: fit-content;
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.menuSelection {
+  display: flex;
+}
+
+.menuContainer {
+  margin-bottom: 5vh;
+}
+
+a {
+  font-size: 18px;
+  display: flex;
+}
+
+.menuSelection button,
+.homeLink,
+a, form input[type=submit] {
+  background-color: #29343b;
+  border: none;
+  position: relative;
+  padding: 0.5rem;
+  width: fit-content;
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  color: #ecf0f1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navMenu .active {
+  color: #3498db;
+}
+
+.menuSelection button.active {
+  color: #3498db;
+}
+
+.menuSelection button:disabled,
+a.disabled, a.disabled:hover {
+  color:  #c0392b;
+}
+
+.menuSelection button::after,
+a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.menuSelection button:hover,
+a:hover, form input[type=submit]:hover {
+  color: #95a5a6;
+  cursor: pointer;
+}
+
+.menuSelection button:hover::after,
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+  cursor: pointer;
+}

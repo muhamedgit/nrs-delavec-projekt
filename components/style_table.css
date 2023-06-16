@@ -1,0 +1,142 @@
+body {
+  height: 100vh;
+  width: 98vw;
+  display: flex;
+  background-color: #29343b;
+  color: whitesmoke;
+}
+
+.tableContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  background-color: #29343b;
+  border-radius: 8px;
+  width: 80%;
+  color: whitesmoke;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+}
+
+tr:nth-child(even) {
+  background-color: #34495e;
+  transition: all 0.2s ease-in-out;
+}
+
+tr:hover {
+  background-color: #2c3e50;
+}
+
+.success {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #29343b;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  width: fit-content;
+  height: 5vh;
+  color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.action {
+  width: fit-content;
+  text-align: center;
+}
+
+.deleteButton {
+  background-color: #c0392b;
+  color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.deleteButton:hover {
+  background-color: #a5281f;
+}
+
+/* New styles for the form */
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-container select,
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="datetime-local"],
+.form-container input[type="submit"],
+.form-container button {
+  background-color:#2186c4;
+  color: white;
+  border: #2186c4 solid 1px;
+  border-radius: 8px;
+  padding: 5px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.form-container select:hover,
+.form-container input[type="text"]:hover,
+.form-container input[type="number"]:hover,
+.form-container input[type="datetime-local"]:hover,
+.form-container input[type="submit"]:hover,
+.form-container button:hover {
+  background-color:#51a2d8;
+  color:#29343b;
+}
+.form-container select:hover,
+.form-container input[type="datetime-local"]:hover,
+.form-container input[type="submit"]:hover,
+.form-container button:hover {
+  background-color:#51a2d8;
+  color:#29343b;
+  cursor: pointer;
+}
+
+
+
+.form-select {
+  width: 150px;
+}
+
+.form-input {
+  width: 200px;
+}
+
+.form-button {
+  background-color: #3498db;
+  color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: #2186c4;
+}

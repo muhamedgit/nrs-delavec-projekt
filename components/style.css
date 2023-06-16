@@ -1,0 +1,117 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    height: 98vh;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    background-color: #29343b;
+}
+.formCont{
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 25vw;
+    height: fit-content;
+}
+.linkCont {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.linkCont a {
+    background-color:#272727;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: #3498db 1px solid;
+    transition: all 0.2s ease-in-out;
+}
+.forminner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    font-size: 24px;
+    width: 25vw;
+}
+.formCont form label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.formCont form label input[type=checkbox] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.formCont form a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #3498db;
+}
+
+.formCont form a:hover {
+    color: rgba(11, 112, 228, 0.8);
+}
+
+
+.success, .error{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #29343b;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    width: fit-content;
+    height: 5vh;
+    color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+    .formCont form input[type=text], 
+    .formCont form input[type=password], 
+    .formCont form input[type=email], 
+    .formCont form input[type=number], 
+    .formCont form input[type=datetime-local]
+    {
+    background-color: #29343b;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    width: 70%;
+    height: max-content;
+    color: whitesmoke;
+}
+
+.formCont form select{
+        background-color: #29343b;
+        border: 2px solid #3498db;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        width: 71.5%;
+        height: max-content;
+        color: whitesmoke;
+        cursor: pointer;
+}
+
+.formCont form input[type=submit]{
+    background-color: #3498db;
+    color: white;
+    font-size: 1.5rem;
+    outline: none;
+    border: 0;
+    height: 5vh;
+    width: 70%;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+.formCont form input[type=submit]:hover{
+    background-color: rgba(11, 112, 228, 0.8);
+    color: #272727;
+    cursor: pointer;
+}
